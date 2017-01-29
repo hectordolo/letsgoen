@@ -29,6 +29,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Josefin+Slab" rel="stylesheet">
 
         @yield('header-scripts')
     </head><!--/head-->
@@ -45,20 +46,17 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="#home">{{ config('app.name', 'LetsGoEn') }}</a>
                     </div>
 
                     <div class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="scroll active"><a href="#home">Home</a></li>
-                            <li class="scroll"><a href="#features">Features</a></li>
-                            <li class="scroll"><a href="#services">Services</a></li>
-                            <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-                            <li class="scroll"><a href="#about">About</a></li>
-                            <li class="scroll"><a href="#meet-team">Team</a></li>
-                            <li class="scroll"><a href="#pricing">Pricing</a></li>
-                            <li class="scroll"><a href="#blog">Blog</a></li>
-                            <li class="scroll"><a href="#get-in-touch">Contact</a></li>
+                            <li class="scroll"><a href="#services">Travel</a></li>
+                            <li class="scroll"><a href="#features">Explore</a></li>
+
+                            <li class="scroll"><a href="#portfolio">Blogs</a></li>
+                            <li class="scroll"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div><!--/.container-->
@@ -67,30 +65,39 @@
 
         <section id="main-slider">
             <div class="owl-carousel">
-                <div class="item" style="background-image: url(images/slider/bg1.jpg);">
+                <div class="item" style="background-image: url(images/slider/slide_01.JPG);">
                     <div class="slider-inner">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="carousel-content">
-                                        <h2><span>Multi</span> is the best Onepage html template</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                        <a class="btn btn-primary btn-lg" href="#">Read More</a>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/.item-->
-                <div class="item" style="background-image: url(images/slider/bg2.jpg);">
+                <div class="item" style="background-image: url(images/slider/slide_02.JPG);">
                     <div class="slider-inner">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="carousel-content">
-                                        <h2>Beautifully designed <span>free</span> one page template</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                        <a class="btn btn-primary btn-lg" href="#">Read More</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" style="background-image: url(images/slider/slide_03.JPG);">
+                    <div class="slider-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="carousel-content">
+
                                     </div>
                                 </div>
                             </div>
@@ -100,165 +107,111 @@
             </div><!--/.owl-carousel-->
         </section><!--/#main-slider-->
 
-        <section id="cta" class="wow fadeIn">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                        <h2>Premium quality free onepage template</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                    <div class="col-sm-3 text-right">
-                        <a class="btn btn-primary btn-lg" href="#">Download Now!</a>
-                    </div>
-                </div>
-            </div>
-        </section><!--/#cta-->
-
-        <section id="features">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title text-center wow fadeInDown">Awesome Features</h2>
-                    <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 wow fadeInLeft">
-                        <img class="img-responsive" src="images/main-feature.png" alt="">
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="media service-box wow fadeInRight">
-                            <div class="pull-left">
-                                <i class="fa fa-line-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UX design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-
-                        <div class="media service-box wow fadeInRight">
-                            <div class="pull-left">
-                                <i class="fa fa-cubes"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UI design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-
-                        <div class="media service-box wow fadeInRight">
-                            <div class="pull-left">
-                                <i class="fa fa-pie-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SEO Services</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-
-                        <div class="media service-box wow fadeInRight">
-                            <div class="pull-left">
-                                <i class="fa fa-pie-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SEO Services</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cta2">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>MULTI</span> IS A CREATIVE HTML TEMPLATE</h2>
-                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Mauris pretium auctor quam. Vestibulum et nunc id nisi fringilla <br />iaculis. Mauris pretium auctor quam.</p>
-                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="#">Free Download</a></p>
-                    <img class="img-responsive wow fadeIn" src="images/cta2/cta2-img.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
-                </div>
-            </div>
-        </section>
-
         <section id="services" >
             <div class="container">
 
                 <div class="section-header">
-                    <h2 class="section-title text-center wow fadeInDown">Our Services</h2>
-                    <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <h2 class="section-title text-center wow fadeInDown">Luzon Travel</h2>
                 </div>
 
                 <div class="row">
                     <div class="features">
                         <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                             <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-line-chart"></i>
-                                </div>
+
                                 <div class="media-body">
-                                    <h4 class="media-heading">UX design</h4>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                    <h4 class="media-heading">Albay</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
 
                         <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
                             <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-cubes"></i>
-                                </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">UI design</h4>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                    <h4 class="media-heading">Pangasinan</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
 
                         <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                             <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-pie-chart"></i>
-                                </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">SEO Services</h4>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                    <h4 class="media-heading">Zambales</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
+                                </div>
+                            </div>
+                        </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.row-->
+
+                <div class="section-header">
+                    <h2 class="section-title text-center wow fadeInDown">Visayas Travel</h2>
+                </div>
+
+                <div class="row">
+                    <div class="features">
+                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <div class="media service-box">
+
+                                <div class="media-body">
+                                    <h4 class="media-heading">Albay</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
 
-                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
                             <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-bar-chart"></i>
-                                </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">iOS App</h4>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                    <h4 class="media-heading">Pangasinan</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
 
-                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                             <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-language"></i>
-                                </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Android App</h4>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                    <h4 class="media-heading">Zambales</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
+                                </div>
+                            </div>
+                        </div><!--/.col-md-4-->
+                    </div>
+                </div><!--/.row-->
+
+                <div class="section-header">
+                    <h2 class="section-title text-center wow fadeInDown">Mindanao Travel</h2>
+                </div>
+
+                <div class="row">
+                    <div class="features">
+                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <div class="media service-box">
+
+                                <div class="media-body">
+                                    <h4 class="media-heading">Albay</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
 
-                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
                             <div class="media service-box">
-                                <div class="pull-left">
-                                    <i class="fa fa-bullseye"></i>
-                                </div>
                                 <div class="media-body">
-                                    <h4 class="media-heading">Win App</h4>
-                                    <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                    <h4 class="media-heading">Pangasinan</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
+                                </div>
+                            </div>
+                        </div><!--/.col-md-4-->
+
+                        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                            <div class="media service-box">
+                                <div class="media-body">
+                                    <h4 class="media-heading">Zambales</h4>
+                                    <img class="img-responsive" src="images/slider/albay.jpg" alt="">
                                 </div>
                             </div>
                         </div><!--/.col-md-4-->
@@ -1019,7 +972,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        &copy; 2014 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                        &copy; 2017 LetsGoEn.
                     </div>
                     <div class="col-sm-6">
                         <ul class="social-icons">

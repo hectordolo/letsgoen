@@ -155,6 +155,8 @@ ul.nostyle i {
 *******Header******
 **************************/
 .navbar.navbar-default {
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
@@ -163,8 +165,10 @@ ul.nostyle i {
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 46px;
   height: auto;
-  padding: 22px 15px 21px;
+  padding: 35px 15px 21px;
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
@@ -226,7 +230,7 @@ ul.nostyle i {
 #main-slider .item {
   height: 558px;
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center;
   background-size: cover;
 }
 #main-slider .slider-inner {

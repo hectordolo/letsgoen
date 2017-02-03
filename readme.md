@@ -19,13 +19,28 @@ Install first the following dependencies if you don't have them.
     * git clone https://github.com/hectordolo/letsgoen.git
     * cd letsgoen
     * Now you are inside the letsgoen application
-    * Leave your terminal open for a moment
-    * 
+    * Inside the directory there is a .env file
+    * edit the env file with the database credentials like the sample below:
+        * DB_DATABASE=letsgoen
+        * DB_USERNAME='root'
+        * DB_PASSWORD=''
+    * Save the file
+    * Now run the command "php artisan key:generate"
+    * Then run the command "composer dump-autoload"
+    
     
 #### Download from GitHub
     * Extract the folder into the htdocs folder of xampp located at "C:\xampp\htdocs"
     * Now you have a directory of "C:\xampp\htdocs\letsgoen" 
     * Go to your terminal and type in: "cd c:xampp/htdocs/letsgoen"
     * Now you are inside the letsgoen application
-    * Leave your terminal open for a moment
+    * Inside the directory there is a .env file
+        * edit the env file with the database credentials like the sample below:
+            * DB_DATABASE=letsgoen
+            * DB_USERNAME='root'
+            * DB_PASSWORD=''
+    * Save the file
+    * Now run the command "php artisan key:generate"
+    * Then run the command "composer dump-autoload"
     
+### Xampp Configuration
